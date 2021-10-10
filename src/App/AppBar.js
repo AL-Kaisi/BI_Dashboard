@@ -5,13 +5,13 @@ import { AppContext } from './AppProvider';
 
 const Logo =styled.div`
 font-size: 1.5em;
-`
+`;
 
 const Bar = styled.div`
 display: grid;
 margin-bottom:40px;
 grid-template-columns: 180px auto 100px 100px;
-`
+`;
 const ControlButtonElem = styled.div`
 cursor:pointer;
 ${props => props.active && css`
@@ -36,7 +36,7 @@ function ControlButton({name}){
     </AppContext.Consumer>
     )
 }
-export default function(){
+export default function AppBar(){
     return (<Bar>
         
         <Logo> CryptoDash</Logo>
@@ -46,3 +46,5 @@ export default function(){
         
         </Bar>
     )}
+
+    
